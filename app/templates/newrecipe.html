@@ -1,0 +1,158 @@
+
+<head>
+    
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/style.css" />
+        <link href="css/custom/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/custom/main.css">
+      
+       
+        <title>Add Recipies</title>
+ <style>
+                    form {
+                        border: 1px solid #f1f1f1;
+                    }
+                    
+                    input[type=text], input[type=password] {
+                        width: 100%;
+                        padding: 12px 20px;
+                        margin: 4px 0;
+                        display: inline-block;
+                        border: 1px solid #ccc;
+                        box-sizing: border-box;
+                    }
+                    
+                    button {
+                        background-color: #4CAF50;
+                        color: white;
+                        padding: 14px 20px;
+                        margin: 8px 0;
+                        border: none;
+                        cursor: pointer;
+                        width: 100%;
+                    }
+                    
+                    button:hover {
+                        opacity: 0.8;
+                    }
+                    
+                    .cancelbtn {
+                        width: auto;
+                        padding: 10px 18px;
+                        background-color: #f44336;
+                    }
+                    
+                    .imgcontainer {
+                        text-align: center;
+                        margin: 24px 0 12px 0;
+                    }
+                    
+                    img.avatar {
+                        width: 30%;
+                        border-radius: 50%;
+                    }
+                    
+                    .container {
+                        padding: 16px;
+                    }
+                    
+                    span.psw {
+                        float: right;
+                        padding-top: 16px;
+                    }
+                    
+                   
+                    @media screen and (max-width: 300px) {
+                        span.psw {
+                           display: block;
+                           float: none;
+                        }
+                        .cancelbtn {
+                           width: 60%;
+                        }
+                    }
+                    </style>
+		</head>
+		<body>	
+			
+			
+                <nav class="navbar navbar-inverse">
+                        <div class="container-fluid">
+                          <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>                        
+                            </button>
+                            <a class="navbar-brand" href="index">Yummy Recipes</a>
+                          </div>
+                          <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav">
+                              <li><a href="index.html">Home</a></li>
+                                                        </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                              <li class="active"><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                              <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                              <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Account <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#">View Profile</a></li>
+                                      <li><a href="#">Logout</a></li>
+                                     
+                                    </ul>
+                                  </li>
+                            </ul>
+                          </div>
+                        </div>
+                </nav>
+
+                <div class="container" style="width:50%">
+                    <div style="background-color: #ADE4A3">
+                <h2>New Recipe</h2>
+                
+                <form>
+                  <div class="imgcontainer">
+				  <label><b>Image</b></label>
+                   <div class="row margin">
+					   <div class="container"  style="width:70%"> 
+					   <input type="file" name="fileupload" value="fileupload" id="fileupload" input type="image" src="/wp-content/uploads/sendform.png" alt="Submit" width="50%">
+					   </div>
+                  </div>
+                
+                  <div class="container"  style="width:70%">
+                    <label><b>Recipe Name</b></label>
+                    <input type="text" placeholder="Recipe Name" name="rec_name" required>
+                
+                  <div class="form-group">
+      <label for="comment">Ingredients</label>
+      <textarea class="form-control" rows="5" id="ingred"></textarea>
+    </div>
+				   
+           <div class="form-group">
+      <label for="comment">Procedure</label>
+      <textarea class="form-control" rows="5" id="proc"></textarea>
+    </div>
+                    
+                    
+
+                   <a href="recipes.html"> <button type="submit">Add Recipe</button></a>
+                  </div>
+                
+                  <div class="container" style="width:70%" >
+                    <a href="recipes.html"><button type="button" class="cancelbtn">Cancel</button></a>
+                    
+                  </div>
+                 
+                </form>
+            </div>
+    </body>
+</html>
